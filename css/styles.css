@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --brown: #6B5748;
+    --biege: #EDE6D5;
+    --coral: #A9C7C1;
+    --dirt: #808F9E;
+    --glossyblack: #252324;
+    --lampblack: #231F20;
+}
+/* Header codeblock */
+header{
+    background-color: var(--glossyblack);
+    height: 10vh;
+}
+.header-div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    padding: 1rem;
+}
+.logo{
+    max-height: 4rem;
+    border-radius: 50px;
+    cursor: grab;
+}
+.logo:active{
+    cursor: grabbing;
+}
+.header-btn-ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    /* This is just to show their border. Do away with your imagination */
+    background-color: var(--dirt);
+    width: auto;
+    padding: .5rem 5rem;
+    /* This is to "center" the buttons to preserve the logo position */
+    margin-left: 37vw;
+}
+.header-btn-ul li{
+    margin: 0 .5rem;
+    text-decoration: underline;
+    transition: all .3s ease;
+    cursor: default;
+}
+.header-btn-ul li:hover{
+    opacity: .7;
+}
+/* Header codeblock */
+
+/* Body codeblock */
+body{
+    background-color: var(--lampblack);
+}
+.main-div{
+    min-height: 80%;
+    margin: 1vh 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item-1{
+    background-color: var(--glossyblack);
+    padding: 1rem;
+}
+/* Body codeblock */
+
+/* Footer codeblock */
+footer{
+    background-color: var(--glossyblack);
+    min-height: 10vh;
+    padding: 1rem;
+}
+.footer-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-title h2{
+    text-decoration: underline;
+}
+.footer-title span{
+    color: var(--dirt);
+}
+.footer-btn-div{
+    margin: .5rem;
+}
+/* socials */
+.footer-btn-ul{
+    list-style: none;
+    display: flex;
+}
+.footer-btn-ul li{
+    margin: .5rem;
+}
+.footer-btn-ul li img{
+    height: 1.5rem;
+    transition: all .3s ease;
+}
+.footer-btn-ul li img:hover{
+    opacity: .7;
+}
+/* Footer codeblock */
